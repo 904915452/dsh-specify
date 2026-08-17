@@ -1,0 +1,22 @@
+{
+  "name": "@zhangqingyu/dsh-specify",
+  "description": "DeepSeek Harness plugin: the Specify (Spec-Kit) spec-driven development skill suite",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "skills/**/*"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
