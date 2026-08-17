@@ -54,14 +54,14 @@ dsh-specify/
 ```bash
 # 任选一个镜像仓库克隆
 git clone https://gitee.com/zqy-904915452/dsh-specify.git
-# git clone https://github.com/904915452/deepseek-harness-specify.git
+# git clone https://github.com/904915452/dsh-specify.git
 cd dsh-specify
 dsh plugin --profile web add "file:$(pwd)"
 ```
 
 `file:` 后要写 clone 下来的**绝对路径**；如果你用的是自定义 profile，把 `web` 换成你的 profile 名。
 也可以直接用仓库地址装：`dsh plugin --profile web add git+https://gitee.com/zqy-904915452/dsh-specify.git`
-（或 GitHub 镜像 `git+https://github.com/904915452/deepseek-harness-specify.git`）。
+（或 GitHub 镜像 `git+https://github.com/904915452/dsh-specify.git`）。
 
 安装后重启会话。之后直接输入 `/speckit-specify …` 即可主动触发对应步骤。
 
